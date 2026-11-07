@@ -8,3 +8,4 @@ skills-lock.json
 shots/
 .DS_Store
 Thumbs.db
+.playwright-mcp/
