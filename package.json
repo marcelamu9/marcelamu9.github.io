@@ -1,0 +1,11 @@
+{
+  "name": "marcelamu9.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Sitio personal de Marcela Garzón, generado desde content/*.json",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/"
+  }
+}

@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.superpowers/
+.agents/
+.taste-skill/
+portfolio/
+skills-lock.json
+shots/
+.DS_Store
+Thumbs.db
