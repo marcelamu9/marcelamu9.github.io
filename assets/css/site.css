@@ -69,7 +69,7 @@ main > section.p + section.p { border-top: 1px solid var(--hair); }
 .pc:hover figure img { transform: scale(1.03); }
 .pc figure.dark { background: var(--bg); }
 .pc figure.dark img { object-fit: contain; padding: var(--s-4); }
-.pc .body { padding: var(--s-5) var(--s-6) var(--s-6); display: grid; gap: var(--s-3); align-content: start; }
+.pc .body { padding: var(--s-5) var(--s-6) var(--s-6); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-3); align-content: start; }
 .pc .tag { font-size: 12px; font-weight: 500; letter-spacing: .02em; color: var(--muted); }
 .pc h3 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 28px; line-height: 1.1; }
 .pc p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink); }
@@ -78,6 +78,7 @@ main > section.p + section.p { border-top: 1px solid var(--hair); }
 .chips span b { color: var(--accent); font-weight: 500; }
 .pc .go { margin-top: var(--s-2); font-size: 14px; font-weight: 500; color: var(--ink); }
 .pc .go::after { content: " →"; display: inline-block; transition: transform .25s; }
+.pc h3, .pc .tag, .pc p, .tl h3, .tl .role, .tl .did, .chips span { overflow-wrap: anywhere; }
 .pc:hover .go::after { transform: translateX(3px); }
 
 /* tools */
@@ -120,11 +121,11 @@ footer.p-foot { padding: var(--s-9) 0 var(--s-6); border-top: 1px solid var(--ha
 @media (max-width: 639px) {
   main > section.p { padding: var(--s-8) 0 !important; }
   .hero-p { padding-top: calc(var(--nav) + var(--s-6)) !important; }
-  .hero-g { grid-template-columns: 1fr; gap: var(--s-6); }
+  .hero-g { grid-template-columns: minmax(0, 1fr); gap: var(--s-6); }
   .does { grid-template-columns: 1fr; }
   .name { font-size: clamp(52px, 15vw, 64px); }
-  .tl { grid-template-columns: 1fr; }
-  .cards { grid-template-columns: 1fr; }
+  .tl { grid-template-columns: minmax(0, 1fr); }
+  .cards { grid-template-columns: minmax(0, 1fr); }
   .tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .lang-link { display: none; }
 }

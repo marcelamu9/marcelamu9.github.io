@@ -15,6 +15,12 @@ test("assertSameShape nombra la ruta de la clave distinta", () => {
   assert.throws(() => assertSameShape({ p: [1, 2] }, { p: [1] }), /Clave distinta en p/);
 });
 
+test("assertSameShape dice qué clave falta o sobra y en qué archivo", () => {
+  assert.throws(() => assertSameShape({ hero: { a: 1, b: 2 } }, { hero: { a: 1 } }), /Clave distinta en hero\.b: falta en en\.json/);
+  assert.throws(() => assertSameShape({ hero: { a: 1 } }, { hero: { a: 1, z: 1 } }), /Clave distinta en hero\.z: sobra en en\.json/);
+  assert.throws(() => assertSameShape({ p: [1, 2] }, { p: [1] }), /Clave distinta en p: 2 elementos en es\.json frente a 1 en en\.json/);
+});
+
 test("los proyectos son 4 y la experiencia va de la más reciente a la más antigua", () => {
   const es = loadContent("es");
   assert.equal(es.projects.items.length, 4);
