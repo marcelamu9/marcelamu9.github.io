@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "title": "Marcela Garzón: científica de datos y estadística",
+    "description": "Soy Marcela Garzón, científica de datos y estadística. Seis años convirtiendo datos en decisiones de negocio, de la exploración a producción. Trabajo remoto desde Colombia.",
+    "lang": "es",
+    "otherLang": "en",
+    "otherLangHref": "en/",
+    "otherLangLabel": "EN"
+  },
+  "nav": {
+    "logo": "Marcela Garzón",
+    "links": [
+      { "href": "#persona", "label": "Sobre mí" },
+      { "href": "#recorrido", "label": "Recorrido" },
+      { "href": "#proyectos", "label": "Proyectos" },
+      { "href": "#herramientas", "label": "Herramientas" }
+    ],
+    "cta": "Escríbeme"
+  },
+  "hero": {
+    "eyebrow": "Científica de datos y estadística",
+    "name": "Marcela",
+    "surname": "Garzón",
+    "lead": "Llevo seis años convirtiendo datos en decisiones de negocio con estadística y machine learning, desde la exploración hasta la puesta en producción.",
+    "cta": "Escríbeme",
+    "secondary": { "href": "#proyectos", "label": "Ver proyectos" },
+    "photoAlt": "Marcela Garzón",
+    "does": [
+      { "icon": "trending-up", "title": "Modelos predictivos", "text": "Leads, churn y segmentación con clasificación y análisis de supervivencia." },
+      { "icon": "users", "title": "Analítica de clientes", "text": "Perfiles de consumidor, canastas de mercado y recomendación." },
+      { "icon": "database", "title": "Datos en producción", "text": "Pipelines con Python, dbt, Snowflake y AWS, versionados en Git." }
+    ]
+  },
+  "about": {
+    "id": "persona",
+    "eyebrow": "Sobre mí",
+    "title": "Más allá de los",
+    "titleAccent": "datos",
+    "paragraphs": [
+      "Soy científica de datos, con formación en Estadística. Lo que más me gusta de mi trabajo es encontrar formas de utilizar los datos y aplicar técnicas estadísticas para convertirlos en información que ayude a tomar decisiones.",
+      "También disfruto trabajar con personas que conocen el negocio y están dispuestas a compartir ese contexto. Entender cómo trabajan, qué necesitan y qué esperan de los resultados me ayuda a elegir mejor los métodos, identificar qué información es relevante y construir soluciones que realmente respondan a sus necesidades.",
+      "Me gusta explorar diferentes métodos y aprender de los distintos problemas que se pueden abordar con datos. Al final, algo que disfruto de esta profesión es que la ciencia de datos puede aplicarse en muchos sectores, siempre que exista una necesidad real y disposición para trabajar en conjunto."
+    ],
+    "facts": [
+      { "icon": "graduation-cap", "text": "Estadística, Universidad del Valle", "sub": "2012 – 2017" },
+      { "icon": "briefcase", "text": "Ingeniería de Datos e IA con AWS", "sub": "Agosto, 2026" },
+      { "icon": "briefcase", "text": "DS4A Colombia 2.0, Correlation One", "sub": "2020 · Machine Learning con Scikit-Learn, Platzi, 2021 · Applied Data Science with Python, Coursera, 2020" }
+    ]
+  },
+  "experience": {
+    "id": "recorrido",
+    "eyebrow": "Experiencia",
+    "title": "Mi recorrido en",
+    "titleAccent": "datos",
+    "lead": "De analista junior a científica de datos.",
+    "leadMuted": "Desde 2019, un recorrido por los proyectos en los que he trabajado, los problemas que he abordado y las soluciones que llegaron a utilizarse.",
+    "items": [
+      {
+        "when": "Dic 2024 – Hoy · Remoto",
+        "company": "Fluid Attacks",
+        "role": "Científica de datos",
+        "text": "Priorización de leads con un clasificador de precisión superior al 70 % y predicción de churn con análisis de supervivencia, en producción con Python, dbt, Snowflake y AWS.",
+        "current": true
+      },
+      {
+        "when": "Abr 2023 – Abr 2024 · Cali",
+        "company": "CODESA",
+        "role": "Científica de datos",
+        "text": "Perfiles de cliente y canastas de mercado; un sistema de recomendaciones con PySpark para personalizar el portafolio. Presenté resultados a gerencia.",
+        "current": false
+      },
+      {
+        "when": "Ago 2021 – Mar 2023 · Remoto",
+        "company": "Matrix Kassier Sured",
+        "role": "Científica de datos",
+        "text": "Segmentación de clientes aplicada al 80 % de la cartera, dashboards de KPIs en Power BI y automatización del 50 % de los modelos.",
+        "current": false
+      },
+      {
+        "when": "Feb 2019 – Ago 2021 · Cali",
+        "company": "Grupo BIT",
+        "role": "Analista de Analytics, junior y luego semi senior",
+        "text": "Modelos de predicción de compras y sistemas de recomendación para clientes de consumo masivo. El modelo de predicción fue adoptado por más del 30 % de los clientes.",
+        "current": false
+      }
+    ]
+  },
+  "projects": {
+    "id": "proyectos",
+    "eyebrow": "Proyectos",
+    "title": "Lo que construyo para seguir",
+    "titleAccent": "aprendiendo",
+    "lead": "Ejercicios y retos técnicos con datos públicos o de prueba, que uso para practicar y mantenerme al día.",
+    "leadMuted": "Todo el código está abierto en GitHub; las métricas son las del ejercicio.",
+    "linkLabel": "Ver en GitHub",
+    "items": [
+      {
+        "title": "Pipeline en AWS y modelo de retrasos de entrega",
+        "tag": "AWS · PySpark · SageMaker · dataset público de Olist",
+        "text": "Integré 99 441 pedidos de siete fuentes en una capa analítica (S3, Glue, Athena), entrené un XGBoost en SageMaker para estimar qué pedidos llegarán tarde y orquesté el flujo con Step Functions.",
+        "metrics": [
+          { "label": "ROC-AUC", "value": "0,78" },
+          { "label": "Recall", "value": "44,5 %" },
+          { "label": "Tasa de retraso", "value": "8,11 %" }
+        ],
+        "image": "olist_stepfunctions.png",
+        "imageAlt": "Máquina de estados de Step Functions del pipeline",
+        "url": "https://github.com/marcelamu9/aws-olist-data-pipeline"
+      },
+      {
+        "title": "ML clásico frente a un LLM en anomalías de precios",
+        "tag": "Python · LLM · grafos · RAG",
+        "text": "Comparé Isolation Forest con un LLM sobre series de precios por producto y medí la diferencia con un test A/B. En el mismo reto, PageRank sobre un grafo de páginas y un RAG con agente crítico.",
+        "metrics": [
+          { "label": "F1 LLM", "value": "0,85" },
+          { "label": "F1 IForest", "value": "0,62" },
+          { "label": "p", "value": "0,042" }
+        ],
+        "image": "desafio_item1.png",
+        "imageAlt": "Serie de precios con anomalías marcadas",
+        "url": "https://github.com/marcelamu9/price-anomalies-ml-vs-llm"
+      },
+      {
+        "title": "Fuga de clientes a partir del historial de compras",
+        "tag": "scikit-learn · XGBoost · SMOTE",
+        "text": "Variables de recencia, monto, frecuencia y periodicidad para 80 294 clientes; clase balanceada con SMOTE y seis modelos comparados con validación cruzada. XGBoost ganó con margen.",
+        "metrics": [
+          { "label": "Clientes", "value": "80 294" },
+          { "label": "Fugados", "value": "13 %" },
+          { "label": "Modelos", "value": "6" }
+        ],
+        "image": "churn_metrics.png",
+        "imageAlt": "Comparación de seis modelos por métrica",
+        "url": "https://github.com/marcelamu9/customer-churn-xgboost"
+      },
+      {
+        "title": "Pronóstico de costos de equipos de construcción",
+        "tag": "statsmodels · ARIMA · Monte Carlo · Gemini",
+        "text": "A partir de precios de materias primas proyecté el costo de equipos con OLS y ARIMA, añadí intervalos con simulación Monte Carlo y dejé un agente conversacional para preguntar por el pronóstico.",
+        "metrics": [
+          { "label": "Modelos", "value": "OLS + ARIMA" },
+          { "label": "Intervalos", "value": "Monte Carlo" }
+        ],
+        "image": "costos_diagrama.svg",
+        "imageAlt": "Pasos del pronóstico: materias primas, selección de variables, OLS y ARIMA, Monte Carlo, agente",
+        "url": "https://github.com/marcelamu9/equipment-cost-forecasting"
+      }
+    ]
+  },
+  "tools": {
+    "id": "herramientas",
+    "eyebrow": "Herramientas",
+    "title": "Con lo que",
+    "titleAccent": "trabajo",
+    "lead": "Python y R para modelar, SQL para los datos, Snowflake, dbt y PySpark para moverlos, AWS para ponerlos en producción y Power BI o QuickSight para contarlos.",
+    "items": [
+      { "name": "Python", "icon": "python.svg", "iconClass": "" },
+      { "name": "R", "letter": "R", "letterColor": "#2066b8" },
+      { "name": "SQL", "letter": "SQL", "letterColor": "#f6f1f4" },
+      { "name": "scikit-learn", "icon": "scikitlearn.svg", "iconClass": "ic-land" },
+      { "name": "Snowflake", "icon": "snowflake.svg", "iconClass": "" },
+      { "name": "dbt", "icon": "dbt.svg", "iconClass": "" },
+      { "name": "PySpark", "icon": "apache-spark.svg", "iconClass": "ic-land" },
+      { "name": "AWS", "icon": "aws.svg", "iconClass": "ic-land" },
+      { "name": "Power BI", "icon": "power-bi.svg", "iconClass": "ic-tall" },
+      { "name": "QuickSight", "icon": "aws-quicksight.svg", "iconClass": "" },
+      { "name": "Jupyter", "icon": "jupyter.svg", "iconClass": "" },
+      { "name": "Git", "icon": "git.svg", "iconClass": "" }
+    ]
+  },
+  "contact": {
+    "id": "contact",
+    "eyebrow": "Contacto",
+    "title": "¿Tienes un reto de datos?",
+    "titleAccent": "Hablemos.",
+    "text": "Me gusta trabajar en problemas reales, desde la idea hasta su efecto en el negocio. Respondo en menos de un día.",
+    "email": "Marcelamu9@gmail.com",
+    "whatsapp": "https://wa.me/573147698713",
+    "linkedin": "https://www.linkedin.com/in/marcelagarzondatascience/",
+    "github": "https://github.com/marcelamu9",
+    "cv": "cv-marcela-garzon.pdf",
+    "cvLabel": "CV"
+  },
+  "footer": {
+    "legal": "© 2026 Marcela Garzón · Colombia"
+  }
+}
