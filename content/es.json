@@ -118,7 +118,7 @@
         ],
         "image": "desafio_item1.png",
         "imageAlt": "Serie de precios con anomalías marcadas",
-        "url": "https://github.com/marcelamu9/price-anomalies-ml-vs-llm"
+        "url": "https://github.com/marcelamu9/desafio_tecnico"
       },
       {
         "title": "Fuga de clientes a partir del historial de compras",
@@ -131,7 +131,7 @@
         ],
         "image": "churn_metrics.png",
         "imageAlt": "Comparación de seis modelos por métrica",
-        "url": "https://github.com/marcelamu9/customer-churn-xgboost"
+        "url": "https://github.com/marcelamu9/modelo_predictivo_fuga_colombina"
       },
       {
         "title": "Pronóstico de costos de equipos de construcción",
@@ -143,7 +143,7 @@
         ],
         "image": "costos_diagrama.svg",
         "imageAlt": "Pasos del pronóstico: materias primas, selección de variables, OLS y ARIMA, Monte Carlo, agente",
-        "url": "https://github.com/marcelamu9/equipment-cost-forecasting"
+        "url": "https://github.com/marcelamu9/gestion_costos_operativos"
       }
     ]
   },

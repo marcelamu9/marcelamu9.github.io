@@ -118,7 +118,7 @@
         ],
         "image": "desafio_item1.png",
         "imageAlt": "Price series with anomalies marked",
-        "url": "https://github.com/marcelamu9/price-anomalies-ml-vs-llm"
+        "url": "https://github.com/marcelamu9/desafio_tecnico"
       },
       {
         "title": "Customer churn from purchase history",
@@ -131,7 +131,7 @@
         ],
         "image": "churn_metrics.png",
         "imageAlt": "Comparison of six models by metric",
-        "url": "https://github.com/marcelamu9/customer-churn-xgboost"
+        "url": "https://github.com/marcelamu9/modelo_predictivo_fuga_colombina"
       },
       {
         "title": "Cost forecasting for construction equipment",
@@ -143,7 +143,7 @@
         ],
         "image": "costos_diagrama.svg",
         "imageAlt": "Forecast steps: raw materials, feature selection, OLS and ARIMA, Monte Carlo, agent",
-        "url": "https://github.com/marcelamu9/equipment-cost-forecasting"
+        "url": "https://github.com/marcelamu9/gestion_costos_operativos"
       }
     ]
   },
