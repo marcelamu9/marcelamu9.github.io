@@ -37,7 +37,7 @@ main > section.p + section.p { border-top: 1px solid var(--hair); }
 .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
 .does { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-5); }
 .does li { display: flex; gap: var(--s-4); align-items: flex-start; }
-.does h3 { margin: 0 0 4px; font-size: 18px; font-weight: 500; line-height: 1.3; }
+.does .does__title { margin: 0 0 4px; font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--ink); }
 .does p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
 
 /* person */

@@ -62,3 +62,10 @@ test("contenido real: 4 tarjetas, 4 nodos, 12 herramientas, un primario por vist
   assert.match(html, /rel="icon" href="assets\/favicon\.svg"/);
   assert.match(html, /<script type="module" src="assets\/js\/site\.js">/);
 });
+
+test("la portada no usa h3 (el orden de encabezados va h1 → h2)", () => {
+  const html = renderPage(loadContent("es"), opts);
+  const hero = html.slice(html.indexOf('<section class="p hero-p"'), html.indexOf("</section>"));
+  assert.doesNotMatch(hero, /<h3/);
+  assert.match(hero, /<p class="does__title">Modelos predictivos<\/p>/);
+});
